@@ -1,0 +1,491 @@
+:root {
+    --darkgrey: rgb(56, 56, 56);
+    --darkpurple: rgb(19, 0, 62);
+    --brownish-yellow: rgb(110, 90, 55);
+}
+
+
+
+html {
+    color:  white;
+    background-color: grey;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Geologica';
+}
+
+body {
+    margin: 0px; 
+    padding: 0px;
+}
+
+main {
+    background-color: rgb(77, 77, 77);
+    margin: 0px  5% 0px 5%;
+    padding: 1%;
+}
+
+h1, h2, h3 {
+    width: auto;
+    text-shadow: 1px 1px 20px rgba(255, 172, 56, 0.25);
+    color: bisque;
+}
+
+
+img {
+    border: 5px solid rgb(112, 87, 57);
+    box-shadow: black 1px 1px 10px;
+    width: 50%;
+}
+
+ol, ul {
+    color: bisque;
+    
+}
+/* Lists */
+
+li {
+    margin: 2%;
+}
+
+li p {
+    color:white;
+}
+
+li strong {
+    color: bisque
+}
+/*  */
+dt {
+    margin: 10px;
+    color: bisque;
+}
+dd {
+    margin: 10px  ;
+    width: 90%;
+}
+
+.block {
+    margin: 20px;
+    box-shadow: 6px 6px var(--darkpurple);
+    color: white;
+    border:  solid black;
+    background-color: var(--darkgrey);
+}
+
+/* .floating-block {
+    background-color;
+} */
+
+/* nav bar  */
+
+.nav {
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    background-color: rgb(35, 35, 35);
+}
+
+.nav .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-item-container {
+    display: flex;
+}
+
+.nav .nav-item {
+    margin: 10px;
+}
+.nav .nav-item a {
+    color: white;
+    text-decoration: none;
+}
+/* .nav ul { 
+    display: flex; */
+    /* flex-direction: row; */
+    /* } */
+    
+.nav #logo {
+    display: inline-block;
+    margin: 10px;
+}
+
+#logo a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo a:visited {
+    text-decoration: none;
+
+}
+
+
+.nav li {
+    border: 10px darkblue solid;
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-btn { 
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav td:hover {
+    background-color: var(--brownish-yellow);
+}
+
+nav td#active {
+    background-color: var(--brownish-yellow);
+}
+@keyframes bgcolor {
+    from {background-color: var(--darkgrey);}
+    to {background-color: grey;}
+}
+    
+.block .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block .nav-item {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+/* .block .nav-item:hover {
+    background-color: black;
+    } */
+    /* Links */
+    /* a:hover {
+        color: black;
+        animation-name: bgcolor;
+        animation-duration: 500ms;
+        } */
+        div.link-button {
+            padding: 5px;
+            border-left: 5px solid black;
+            
+        }
+        div.link-button a {
+            color: white;
+            border: 1px solid black;
+            padding: 5px 20px;
+            background-color: var(--darkgrey); 
+            border-radius: 5%;
+    box-shadow: 3px 3px var(--darkpurple);
+}
+
+div#container {
+    box-shadow: 3px 3px var(--darkpurple);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 30px grey;
+    
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 5%;
+    
+}
+
+#container input, #container button{
+    color: white;
+    background-color: grey;
+    box-shadow: 3px 3px var(--darkpurple);
+    display: block;
+    border: 0px;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+/* assignments */
+/* #assignments .block {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    } */
+    #assignments {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#assignments table {
+    text-align: left;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+#assignments table thead {
+    font-size: xx-large;
+    color: bisque;
+    text-align: center;
+}
+/* #assignments th td {
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    }  */
+#assignments div.block th {
+    color: bisque;
+    border-bottom: 3px solid var(--darkpurple);
+    font-size: x-large;
+}
+#assignments tbody tr td{
+    padding: 15px;
+}
+
+/* #assignments tbody tr td:nth-child(2){
+    border-left: 3px solid var(--darkpurple);
+    } */
+    #assignments div.block td:nth-child(2) {
+        border-left: 3px solid var(--darkpurple);
+    }
+    #assignments div.block tbody tr:hover {
+        background-color: rgb(75, 75, 75);
+    }
+    
+    #assignments table a  {
+        color: rgb(33, 92, 255);
+        text-decoration: none;
+    }
+    
+    /* CSS fundemantals */
+    
+    .block .text-align-left {
+        text-align: left;
+    }
+    
+    .block .text-align-right {
+        text-align: right;
+    }
+    
+    .block .text-align-center {
+        text-align: center;
+    }
+    
+    .social-link {
+        color: red;
+    }
+    
+    .overload {
+        text-decoration: overline underline line-through;
+        color: aqua;
+    }
+    
+    .uppercase {
+        text-shadow: 1px 1px black;
+        color: rgb(255, 77, 0);
+        text-transform: uppercase;
+    }
+    
+    .lowercase {
+        text-shadow: 2px 2px blue;
+        color: rgb(47, 198, 0);
+        text-transform: lowercase;
+    }
+    
+    .capitalize {
+        text-shadow: 1px 1px 10px black;
+        color: brown;
+        text-transform: capitalize;
+    }
+    
+    .border-styles *{
+        padding: 10px;
+    }
+    
+.border-dashed {
+    border-style: dashed;
+}
+.border-solid {
+    border: 1px solid;
+}
+.border-double {
+    border-style: double;
+}
+.border-groove {
+    border-style: groove;
+}
+.border-ridge {
+    
+    border-style: ridge;
+}
+.border-inset{
+    border-style: inset;
+}
+.border-outset {
+    
+    border-style: outset;
+}
+.border-none {
+    
+    border-style: none;
+}
+.border-hidden {
+    
+    border-style: hidden;
+}
+.border-width  {
+    margin-top: 10px;
+}
+
+.border-text-left{
+    border-style: solid;
+    
+    border-width: 10px 500px 10px 50px;
+    border-color: var(--darkpurple);
+}
+
+.border-text-center {
+    border-radius: 50px 10px;
+    border: 10px solid black;
+}
+
+.border-text-right {
+    border: 5px solid peru;
+    background-color: brown;
+}
+
+#border-skinny {
+    margin: 1rem;
+    color: black;
+    background-color: yellow;
+    width: 300px;
+}
+
+#border-large {
+    margin: 1rem;
+    color: black;
+    background-color: lightblue;
+    width: 300px;
+    padding: 25px; 
+    box-sizing: border-box;
+}
+#box-model-container {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+}
+
+#box-model {
+    background-color: green;
+    height: 250px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    
+}
+
+
+/* buttons */
+.buttons-container  {
+    margin: 15px;
+    
+}
+
+#demo-button-message {
+    font-weight: bold;
+    font-size: xx-large;
+    color: beige;
+}
+
+.demo-button {
+    font-family: "Geologica";
+    font-size: medium;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    color: white;
+    border-style: none;
+    border-radius: 0px;
+}
+
+
+.demo-button:hover {
+    filter: brightness(85%);
+}
+
+/* HELPER */
+
+.bd-round {
+    border-radius: 10px
+}
+
+.bd-x-round {
+    border-radius: 20px
+}
+
+
+.bd-xx-round {
+    border-radius: 30px
+}
+
+.bd-circle-round {
+    border-radius: 50%;
+}
+
+/* bg color */
+.bg-green {
+    background-color: green;
+}
+
+.bg-lightblue {
+    background-color: lightblue;
+}
+
+.bg-plum {
+    background-color: plum;
+}
+
+.bg-seagreen {
+    background-color: seagreen;
+}
+
+.bg-lightgrey {
+    background-color: lightgrey;
+}
+
+.bg-black {
+    background-color: black;
+    
+}
+/* box shadows */
+.bx-sd-red {
+    box-shadow: 6px 6px rgb(60, 15, 15);
+}
+
+.bx-sd-green {
+    box-shadow: 6px 6px rgb(0, 94, 0);
+}
+
+.bx-sd-purple {
+    box-shadow: 6px 6px rgb(69, 0, 94);
+}
+.bx-sd-green {
+    box-blue: 6px 6px rgb(0, 47, 128);
+}
+.bx-sd-grey {
+    box-shadow: 6px 6px rgb(154, 154, 154);
+}

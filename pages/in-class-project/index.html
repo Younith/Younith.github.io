@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <link href="styles/styles.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />  
+    <title>My test page</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-bar">
+            <div id="logo"><a href="/">Eng Younith</a></div>
+            <div class="nav-item-container">
+                <div class="nav-item"><i>placeholder</i></div>
+                <div class="nav-item"><i>placeholder</i></div>
+                <div class="nav-item"><i>placeholder</i></div>
+            </div>
+            <!-- <ul>
+                <li>Somewhere</li>
+                <li>Somewhere</li>
+                <li>Somewhere</li>
+            </ul> -->
+        </div>
+    </div>
+        
+    <!-- <table>
+        <tr>
+            <td><a class="nav-btn" href="#beltei-section">Beltei</a></td>
+            <td><a class="nav-btn" href="#assignments">Assignments</a></td>
+        </tr>
+    </table> -->
+    
+    <main>
+        <button>Change User</button>
+        <h1>Eng Younith</h1>
+        <h1>HTML</h1>
+        <details>
+            <h2>Elements</h2>
+            <img src="/images/html-elements.png" alt="html element diagram" />
+            <h2>Void Elements</h2>
+            <img src="/images/html-elements-void.png" alt="void element diagram" />
+            
+            <h1>CSS : all about boxes</h1>
+            <h2><abbr title="Element in HTML are all considered to be in the own box when it comes to styling">Boxes</abbr></h2>
+            <div class="block">
+                <p>CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:</p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>padding : </strong>
+                            the space around the content. In the example below, it is the space around the paragraph text.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <p>
+                            <strong>border : </strong>
+                            the solid line that is just outside the padding.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <p>
+                            <strong>margin : </strong>
+                            the space around the outside of the border.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <img src="/images/css-box-model.png" alt="box model diagram">
+            
+            <h2>Linking to the stylesheet</h2>
+            <p>In order to style the document, we'd need to use the 'link' tag pointing to a '.css' file</p>
+            <img src="/images/css-link.png" alt="link" />
+            <h2>Antomy of CSS</h1>
+                <img src="/images/css-definition.png" />
+                <p>the file itself can be found here <a href="styles/styles.css">style sheet file </a></p>
+                <div class="block">
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Declaration : </strong>
+                                This is a single rule like color: red;. It specifies which of the element's properties you want to style.
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                <strong>Properties : </strong>
+                                These are ways in which you can style an HTML element. (In this example, color is a property of the p elements.) In CSS, you choose which properties you want to affect in the rule.
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                <strong>Property value : </strong>
+                                To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)
+                            </p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </details>
+            <!--===========================================================================================-->
+            <section id="beltei-section">
+                <h1>Beltei IU</h1>
+                <p>This section contains all the in class examples.</p>
+                <div class="block">
+                    <h2>Lists (Week 6)</h2>
+                    <h3>Numbers</h3>
+                    <ol type="1">
+                        <li><a href="ran-file-1.py">Python</a></li>
+                        <li><a href="ran-file-2.cpp">CPP</a></li>
+                        <li><a href="ran-file-3.cs">CSharp</a></li>
+                    </ol>
+                    
+                    <h3>Lower Case Letters</h3>
+                    <ol type="a">
+                        <li><a href="ran-file-1.py">Python</a></li>
+                        <li><a href="ran-file-2.cpp">CPP</a></li>
+                        <li><a href="ran-file-3.cs">CSharp</a></li>
+                    </ol>
+                    
+                    <h3>Upper Case Letters</h3>
+                    <ol type="A">
+                        <li><a href="ran-file-1.py">Python</a></li>
+                        <li><a href="ran-file-2.cpp">CPP</a></li>
+                        <li><a href="ran-file-3.cs">CSharp</a></li>
+                    </ol>
+                    
+                    <h3>Roman Numerals</h3>
+                    <div class="link-button">
+                        <ol type="I">
+                            <li><a href="ran-file-1.py">Python</a></li>
+                            <li><a href="ran-file-2.cpp">CPP</a></li>
+                            <li><a href="ran-file-3.cs">CSharp</a></li>
+                        </ol>
+                    </div>
+                    
+                    <h3>Un-ordered list</h3>
+                    <div class="link-button">
+                        <ul>
+                            <li type=""><a href="ran-file-1.py">Python</a></li>
+                            <li type="circle"><a href="ran-file-2.cpp">CPP</a></li>
+                            <li type="none"><a href="ran-file-3.cs">CSharp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <h1>I-Frame</h1>
+                
+                <center><iframe src="https://www.youtube.com/embed/wsTv9y931o8" width="500px" height="250px"></iframe></center>
+                <h2>Description Lists (References)</h2>
+                <dl>
+                    <div class="block">
+                        <dt><strong>HTML</strong></dt>
+                        <dd>Hyper-text manipulation language. Used to organize and create the structure of a page</dd>
+                    </div>
+                    
+                    <div class="block">
+                        <dt><strong>CSS</strong></dt>
+                        <dd>Cascading Style Sheets. Used to apply formats, colors, sizes . . . to an HTML page</dd>
+                    </div>          
+                    
+                    
+                    <div class="block">
+                        <dt><strong>JS</strong></dt>
+                        <dd>Javascript. General purpose programmaing language that is often used to make HTML pages more interactive</dd>
+                    </div>
+                </dl>
+                
+                
+                <h1>Forms</h1>
+                <h3>Create New Account</h3>
+                
+                <div class="block">
+                    
+                    <form action="">
+                        <fieldset>
+                            <legend>Create an Account</legend>
+                            <fieldset>
+                                <legend>Name</legend>
+                                <label for="fname">
+                                    First name : 
+                                    <input type="text">
+                                </label>
+                                
+                                <label for="fname">
+                                    Last name : 
+                                    <input type="text">
+                                </label>
+                                <br>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Birth Date</legend>
+                                
+                                <label for="Date">
+                                    <select name="date" id="date">
+                                        <option value="">2</option>
+                                    </select>
+                                </label>
+                                <label for="month">
+                                    <select name="month" id="month">
+                                        <option value="">January</option>
+                                        <option value="">Februrary</option>
+                                        <option value="">March</option>
+                                    </select>
+                                </label>
+                                
+                                <label for="year">
+                                    <select name="year" id="year">
+                                        <option value="">2001</option>
+                                        <option value="">2002</option>
+                                        <option value="">2003</option>
+                                        <option value="">2004</option>
+                                    </select>
+                                </label>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Gender</legend>
+                                <label for="Gender">
+                                    <div><input type="radio" name="sex" value="Male"> <label> Male </label></div>
+                                    <div><input type="radio" name="sex" value="Female"> <label> Female </label></div>
+                                    <div><input type="radio" name="sex" value="None"> <label> None </label></div>
+                                </label>
+                            </fieldset> 
+                            
+                            <fieldset>
+                                <legend>Email & Password</legend>
+                                <label>Email or Number : </label><input type="text">
+                                <label>New Password : </label><input type="text">
+                            </fieldset>
+                            <!-- todo: make it a button not a link  -->
+                            <button><a style="text-decoration: none;" href="/pages/login-page/">Submit</a></button>
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div class="block">
+                    <fieldset>
+                        <!-- Week 7 -->
+                        <legend>Week 7 (Fruit)</legend>
+                        
+                        <label for="fruit">Bananas :</label>
+                        <input type="checkbox">
+                        <br>
+                        <label for="fruit">Apples :</label>
+                        <input type="checkbox">
+                        <br>
+                        <label for="fruit">Oranges :</label> 
+                        <input type="checkbox">
+                        <br>
+                        <label for="fruit">Tomatoes :</label>
+                        <input type="checkbox">
+                    </fieldset>
+                </div> 
+                
+                <div class="block">
+                    <fieldset>
+                        <legend>Fruits Dropdown</legend>
+                        <select name="fruit" id="fruit-selec">
+                            <optgroup label="Fruit">
+                                <option value="bananas">Bananas</option>
+                                <option value="apples">Apples</option>
+                                <option value="oranges">Oranges</option>
+                                <option value="cherry">Cherry</option>
+                            </optgroup>
+                            
+                            <optgroup label="Vegetables">
+                                <option value="cabbage">Cabbage</option>
+                                <option value="celery">Celery</option>
+                                <option value="lettuce">Lettuce</option>
+                                <option value="bell-pepper">Bell Pepper</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="block">
+                    <fieldset>
+                        <legend>Text Area & Buttons</legend>
+                        <label for="comment">Leave us a comment : </label>
+                        <br>
+                        <textarea name="comment" id="" style="width: 300px;"></textarea>
+                        <br>
+                        <button>Submit</button>
+                        <button>Cancel</button>
+                    </fieldset>
+                </div>
+                
+                
+                <!-- css -->
+                <h1 style="color: red;">CSS Fundementals (Week 8)</h1>
+                <h2>Text Alignment</h2>
+                <div class="block bx-sd-red">
+                    <h1 class="text-align-left">Text-align-left:</h1>
+                    <p class="text-align-left">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                </div>
+                <div class="block bx-sd-red">
+                    <h1 class="text-align-left">Text-align-right:</h1>
+                    <p class="text-align-right">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                </div>
+                <div class="block bx-sd-red">
+                    <h1 class="text-align-left">Text-align-center:</h1>
+                    <p class="text-align-center">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                </div>
+                <h2>Text Decorations</h2>
+                <h2>Links</h2>
+                <a class="social-link" href="Facebook.com">Facebook.com</a>
+                <p class="overload">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                
+                <h2>Text Transform</h2>
+                <p class="uppercase">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                <p class="lowercase">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                <p class="capitalize">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                
+                <h1>Borders</h1>
+                <h2>Border Styles</h2>
+                <div class="border-styles">
+                    <p class="border-dashed">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-solid">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-double">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-groove">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-ridge">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-inset">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-outset">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-none">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                    <p class="border-hidden">We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus</p>
+                </div>
+                <h2>Border Width</h2>
+                <div class="border-width">
+                    <div class="border-text-left">
+                        We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus
+                    </div>
+                    <div class="border-text-center">
+                        We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus
+                    </div>
+                    <div class="border-text-right">
+                        We don't rise to the level of our expectations, we fall to the level of our training. - Archilochus
+                    </div>
+                </div>
+                
+                <h1>Padding & Element Width & CSS Box Model (Week 9)</h1>
+                <div class="block bx-sd-green">
+                    <div id="border-skinny">
+                        This div is 300px wide
+                    </div>
+                    <div id="border-large">
+                        the width of this div is 350px, even though it is defined as 300px in the CSS
+                    </div>
+                    <div id="box-model-container">
+                        1
+                        <div id="box-model">
+                            2
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <h1>Buttons & Button Styles</h1>
+                
+                <div class="block">
+                    <div class="buttons-container">
+                        <p id="demo-button-message">Message</p>
+                        <button class="demo-button bg-green bd-round" onclick="let custom_message = prompt('Replace the message with something else:');let message = document.getElementById('demo-button-message'); message.innerText = custom_message; ">Green</button>
+                        <button class="demo-button bg-lightblue bd-x-round">Light Blue</button>
+                        <button class="demo-button bg-plum bd-xx-round">Plum</button>
+                        <button class="demo-button bg-seagreen bd-circle-round">Seafoam</button>
+                        <button class="demo-button bg-lightgrey bd-round">Grey</button>
+                        <button class="demo-button bg-black bd-round">Black</button>
+
+                        <h1>Transparent Background</h1>
+                    </div>
+
+                </div>
+
+                <h1>Icons</h1>
+                <div class="block">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <h1>Nav</h1>
+                    <i>See current nav bar</i>
+                    <div class="block bx-sd-purple">
+                        <div class="nav">
+                            <div id="logo" class="nav-item">Younith</div>
+                            <div class="nav-bar">
+                                <div class="nav-item">something</div>
+                                <div class="nav-item">something</div>
+                                <div class="nav-item">something</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- <div class="floating-block">
+                    <div class="buttons-container">
+                        <p id="demo-button-message">Message</p>
+                        <button class="demo-button bg-lightblue">Light Blue</button>
+                        <button class="demo-button bg-plum">Plum</button>
+                        <button class="demo-button bg-seagreen">Seafoam</button>
+                        <button class="demo-button bg-lightgrey">Grey</button>
+                        <button class="demo-button bg-black">Black</button>
+                    </div>
+                    
+                </div> -->
+            </section>
+            
+            <h1></h1>
+            
+            
+            <h1>Assignments</h1>
+            <p>Homework assignments, both written in the student journal and code.</p>
+            
+            <section id="assignments">
+                
+                <center>
+                    <table>
+                        <thead>
+                            <th><u>Code</u></th>
+                            <th><u>Journal</u></th>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="block">
+                                    <table>
+                                        <thead>
+                                            <th>Title</th>
+                                            <th>Links</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>HTML-Quiz</td>
+                                                <td><a href="/pages/html-quiz/index.html" target="_blank">pages/html-quiz/index.html</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sports Page</td>
+                                                <td><a href="/pages/sport/index.html" target="_blank">pages/sport/index.html</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table Layout (Week 3)</td>
+                                                <td><a href="/pages/Navigation/Navigation1.html" target="_blank">
+                                                    
+                                                    pages/Navigation/Navigation1.html</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td></td>
+                                                    <td><a href="/pages/Navigation/Navigation2.html" target="_blank">pages/Navigation/Navigation2.html</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><a href="/pages/Student List/Student List.html" target="_blank">pages/Student List/Student List.html</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Form Exercise</td>
+                                                    <td><a href="/pages/form-exercise/index.html" target="_blank">pages/form-exercise/index.html</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>University Page (HW Week 8)</td>
+                                                    <td><a href="/pages/university/index.html" target="_blank">pages/university/index.html</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Multi-Page (Week 9)</td>
+                                                    <td><a href="/pages/multi-page/index.html" target="_blank">pages/multi-page/index.html</a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Cool Styles</td>
+                                                    <td><a href="/pages/cool-styles/index.html" target="_blank">pages/cool-styles/index.html</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </td>
+                                
+                                <td>
+                                    <div class="block">
+                                        <table>
+                                            <thead>
+                                                <th>Title</th>
+                                                <th>Links</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Homework (Week 1)</td>
+                                                    <td><a href="/images/wbd-journal-(1).jpg" target="_blank">images/wbd-journal-(1).jpg</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Homework (Week 2)</td>
+                                                    <td><a href="/images/wbd-journal-(2).jpg" target="_blank">images/wbd-journal-(2).jpg</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    
+                    
+                </section>
+                
+            </main>
+            
+            
+        </body>
+        <script src="scripts/main.js"></script>
+        </html>

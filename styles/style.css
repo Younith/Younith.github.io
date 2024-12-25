@@ -1,0 +1,262 @@
+:root {
+    --darkgrey: rgb(56, 56, 56);
+    --darkpurple: rgb(19, 0, 62);
+    --brownish-yellow: rgb(110, 90, 55);
+}
+.block {
+    margin: 20px;
+    box-shadow: 10px 10px var(--darkpurple);
+    color: white;
+    border:  solid black;
+    border-radius: 20px;
+    background-color: var(--darkgrey);
+}
+.bg-none {
+    background-color: none;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-black {
+    background-color: black;
+}
+.bg-yellow {
+    background-color: rgb(235, 199, 0);
+}
+.bg-lightskyblue {
+    background-color: lightskyblue;
+}
+
+.bg-lime {
+    background-color: limegreen;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    color: white ;
+    /* background-color: var(--darkgrey); */
+    background-color: black;
+    font-family: 'Geologica';
+
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+a { 
+    color: white;
+}
+
+img {
+    max-height: 800px;
+    max-width: 800px;
+}
+.hidden {
+
+    display: none;
+}
+/* main {
+    padding: 10px;
+    margin: 0px;
+    background-color: black;
+    align-items: center;
+} */
+/* .container {
+    position: relative;
+}
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(to right, black, white);
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+} */
+
+
+/* Nav */
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    padding: 5px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    overflow: hidden;
+}
+
+.nav-item-container {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#logo {
+    font-size: x-large;
+}
+#logo span {
+}
+
+.nav-item {
+    display: block;
+    padding: 10px;
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+}
+.nav-item a:visited {
+    text-decoration: none;
+}
+/* ribbon */
+.ribbon-container {
+    margin-top: 1rem;
+
+}
+
+.ribbon {
+    padding: 10px;
+    margin: 5px;
+}
+/* section : profile */
+
+.profile-container {
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.splash-text-paragraph {
+    font-size: small;
+    font-family: "Source Code Pro";
+}
+.splash-text {
+    font-size: xx-large;
+    font-weight: 400px;
+    width: 650px;
+    
+}
+.profile-container img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    filter: grayscale(100%) brightness(70%);
+}
+.splash-text strong {
+    color: yellow;
+}
+.splash-text strong:nth-child(2){
+    color: lightskyblue;
+}
+.splash-text strong:nth-child(3) {
+    color: lime;
+}
+
+
+.project-button button{
+    cursor: pointer;
+    color: white;
+    font-family: "Bungee";
+    margin-left: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.project-button button:hover {
+}
+
+/* section : WBD */
+#wbd {
+    margin-top: 20vh;
+}
+
+.wbd-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .wbd-img-container img {
+    height: 500px;
+    width:  750px;
+    border: 10px solid black;
+    border-radius: 10px;
+} */
+.card {
+    /* border: 10px solid rgb(0, 0, 0); */
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+}
+.card h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-family: "Bungee", serif;
+}
+
+.card p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-family: "Bungee", serif;
+}
+.wbd-container .wbd-button-container button {
+    cursor: pointer;
+    font-family: "Bungee";
+    margin-left: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+/* CSS */
+.styled-button {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.styled-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+footer {
+    margin-top: 10vh;
+    background-color: rgb(32, 32, 32);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.foot-group {
+    display: flex;
+}
+.foot-container {
+    margin-left: 40px;
+}
+.foot-header {
+    color: lightskyblue;
+}
+.foot-text {
+    margin: 10px;
+}

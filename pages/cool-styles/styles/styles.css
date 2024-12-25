@@ -1,0 +1,54 @@
+.vim-container {
+    /* temp */
+    color: white;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    position: relative;
+
+    /* padding */
+}
+
+.vim-ribbon {
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    height: 100px;
+    width:  100px;
+    background-color: lime;
+}
+
+#pointer {
+  --pointer-width: 200px; /* Adjust the width of the pointer */
+  --pointer-height: 40px; /* Adjust the height of the pointer */
+  --triangle-size: 20px;  /* Adjust the size of the triangles */
+
+  width: var(--pointer-width);
+  height: var(--pointer-height);
+  position: relative;
+  background: red;
+}
+
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: var(--triangle-size) solid white;
+  border-top: var(--triangle-size) solid transparent;
+  border-bottom: var(--triangle-size) solid transparent;
+}
+
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: var(--triangle-size);
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: var(--triangle-size) solid red;
+  border-top: var(--triangle-size) solid transparent;
+  border-bottom: var(--triangle-size) solid transparent;
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Geologica:wght@100..900&family=Paytone+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />  
+    <title>Profile</title>
+</head>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 1, 63, 0.322)), url(img/bg-v2.jpg); background-repeat: no-repeat; background-size: cover">
+    <nav>
+        <div class="nav-bar">
+            <div id="logo"><span>Eng</span> Younith</div>
+            <ul class="nav-item-container">
+                <li class="nav-item"><a href="/pages/in-class-project">In Class Examples</a></li>
+                <li class="nav-item">something else</li>
+                <li class="nav-item">something more</li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="profile" style="background-image: url(); background-repeat: no-repeat; background-size: cover">
+        
+        <div class="ribbon bg-none">
+            <div class="profile-container">
+                <div class="splash-text">
+                    This is a landing page for all things <strong>WBD</strong>
+                    <div class="splash-text-paragraph">
+                        This is a showcase project for a landing page by <strong>Mr.Eng Younith</strong>, submitted to <strong>Mr.But Chomroeun</strong>
+                    </div>
+                </div>
+                <img src="img/me.jpg" alt="">
+            </div>
+
+            <div class="project-button-container">
+                <div class="project-button">
+                    <button class="bg-yellow" onclick="focus_id('html-ribbon');toggle_hidden('html-img');toggle_hidden('html-img');">HTML</button>
+                    <button class="bg-lightskyblue" onclick="focus_id('css-ribbon')">CSS</button>
+                    <button class="bg-lime" onclick="focus_id('javascript-ribbon')">Javascript</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wbd">
+        <div class="ribbon-container" id="html-ribbon" tabindex="1">
+            <div class="ribbon wbd-container bg-yellow">
+                <div class="card">
+                    <h1>HTML</h1>
+                    <p>Gives things structure</p>
+                </div>
+                <div class="wbd-button-container">
+                    <button class="styled-button" onclick="window.open('https://www.w3schools.com/html/default.asp')">Resources</button>
+                    <button class="styled-button" onclick="toggle_hidden('html-img'); focus_id('html-img')">Example</button>
+                </div>
+            </div>
+            <div class="ribbon bg-yellow hidden" tabindex="0" id="html-img">
+                <div class="wbd-container">
+                    <div class="card">
+                        <p>This is some of the HTML applied to this document</p>
+                    </div>
+                    <center><img src="img/HTML.png"></center>
+                </div>
+            </div>
+        </div>
+
+        <div class="ribbon-container" id="css-ribbon" tabindex="1">
+            <div class="ribbon wbd-container bg-lightskyblue">
+                <div class="card">
+                    <h1>CSS</h1>
+                    <p>Makes things look good</p>
+                </div>
+                <div class="wbd-button-container">
+                    <button class="styled-button" onclick="window.open('https://www.w3schools.com/css/default.asp')">Resources</button>
+                    <button class="styled-button" onclick="toggle_hidden('css-img'); focus_id('css-img')">Example</button>
+                </div>
+            </div>
+            <div class="ribbon bg-lightskyblue hidden" tabindex="0" id="css-img">
+                <div class="wbd-container">
+                    <div class="card">
+                        <p>This is some of the css used here</p>
+                    </div>
+                    <center><img src="img/CSS.png"></center>
+                </div>
+            </div>
+        </div>
+
+        <div class="ribbon-container" id="javascript-ribbon" tabindex="1">
+            <div class="ribbon wbd-container bg-green">
+                <div class="card">
+                    <h1>Javascript</h1>
+                    <p>Makes thing function</p>
+                </div>
+                <div class="wbd-button-container">
+                    <button class="styled-button" onclick="window.open('https://www.w3schools.com/js/default.asp')">Resources</button>
+                    <button class="styled-button" onclick="toggle_hidden('javascript-img'); focus_id('javascript-img')">Example</button>
+                </div>
+            </div>
+            <div class="ribbon bg-green hidden" tabindex="0" id="javascript-img">
+                <div class="wbd-container">
+                    <div class="card">
+                        <p>This is a Javascript that toggles the images to appear and to pull focus to it</p>
+                    </div>
+                    <center><img src="img/Javascript.png"></center>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="foot-group">
+            <div class="foot-container">
+                <div class="foot-text">
+                    <i class="material-icons">call</i>
+                    012 123 444
+                </div>
+                <div class="foot-text">
+                    <i class="material-icons">cloud</i>
+                    @Eng-Younith
+                </div>
+            </div>
+            <div class="foot-container">
+                <div class="foot-header">
+                    Student Information
+                </div>
+                <div class="foot-text">
+                    <p>Name : Eng Younith</p>
+                    <p>Class : CNCS</p>
+                    <p>Shift : Evening</p>
+                    <p>Class : WBD</p>
+                </div>
+            </div>
+        </div>
+        <div class="foot-container">
+            <div class="foot-header">
+                School Information
+            </div>
+            <div class="foot-text">
+                <a href="https://maps.app.goo.gl/3VAvxAXJKSBc9Rhe7">Beltei International University, Campus 2</a>
+                <p>(Campus 2, Chaom Chao Flyover)</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- <section id="wbd"> -->
+        <!-- <div class="profile-container">
+            <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
+        </div>
+            
+        <div class="wbd-block-container bg-yellow">
+            <div class="card">
+                <h1>HTML</h1>
+                <p>Makes things have structure</p>
+            </div>
+        </div>
+        <div class="wbd-block-container bg-lightskyblue">
+            <div class="card">
+                <h1>CSS</h1>
+                <p>Makes things nice to look at</p>
+            </div>
+            <hr>
+        </div>
+        <div class="wbd-block-container bg-lime">
+            <div class="card">
+                <h1>Javascript</h1>
+                <p>Makes things interactive</p>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- <section id="wbd">
+        <div class="profile-container">
+            <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
+        </div>
+    </section> -->
+    
+</body>
+<script>
+    function toggle_hidden(id) {
+        const hidden_element = document.getElementById(id)
+        if (hidden_element) {
+            hidden_element.classList.toggle("hidden")
+        }
+        else {
+            alert("No hidden element with that found!")
+        }
+    }
+    function focus_id(id) {
+        const focus_target = document.getElementById(id)
+
+        if (focus_target) {
+            focus_target.focus();
+        }
+        else {
+            alert("Focus target not found!")
+        }
+    }
+</script>
+</html>

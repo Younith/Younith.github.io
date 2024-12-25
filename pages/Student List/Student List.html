@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body style="margin: 10% 20% 0 20% ; font-family: Kh Battambang;">
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="16" style="height: 25px;"></th>
+            </tr>
+            <tr>
+                <th rowspan="4">No</th>
+                <th rowspan="4">ID</th>
+                <th rowspan="4">Full Name</th>
+                <th rowspan="4">Name in Latin</th>
+            </tr>       
+            
+            <tr>
+                <th>Date</th>
+                <th colspan="2">21/10/24</th>
+                <th colspan="2">22/10/24</th>
+                <th colspan="2">23/10/24</th>
+                <th colspan="2">24/10/24</th>
+                <th colspan="2">25/10/24</th>
+            </tr>
+            
+            <tr>
+                <th>Subject</th>
+                <th colspan="2">NA I</th>
+                <th colspan="2">DMS</th>
+                <th colspan="2">WBD I</th>
+                <th colspan="2">OS</th>
+                <th colspan="2">CSL</th>
+            </tr>
+            
+            <tr>
+                <th>Session</th>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+            
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td>1</td>
+                <td>56615</td>
+                <td>ឆុន សៀកឡេង</td>
+                <td>CHHON SEAKLENG</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>56667</td>
+                <td>អ៊ុត ស៊ីង</td>
+                <td>EAT SING</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>57106</td>
+                <td>អេង យូនិត</td>
+                <td>ENG YOUNITH</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>56414</td>
+                <td>ខ Kai ឌីយែរ</td>
+                <td>KHAI DICARE</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>57552</td>
+                <td>ខុន សូណា</td>
+                <td>KHON SONA</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>56640</td>
+                <td>គួន សុវណ្ណារិទ្ធ</td>
+                <td>KUON SOVANNARETH</td>
+                <td>M</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="13" style="text-align: right;">Total Student: </td>
+                <td colspan="2" style="text-align: center;">6</td>
+            </tr>
+        </tfoot>
+    </table> 
+    
+    
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
