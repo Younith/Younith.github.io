@@ -37,7 +37,7 @@ body {
     /* background-color: var(--darkgrey); */
     background-color: black;
     font-family: 'Geologica';
-
+    
 }
 
 html {
@@ -54,24 +54,24 @@ img {
     max-width: 800px;
 }
 .hidden {
-
+    
     display: none;
 }
 /* main {
-    padding: 10px;
-    margin: 0px;
-    background-color: black;
-    align-items: center;
+padding: 10px;
+margin: 0px;
+background-color: black;
+align-items: center;
 } */
 /* .container {
-    position: relative;
+position: relative;
 }
 .gradient {
-    position: absolute;
-    background-image: linear-gradient(to right, black, white);
-    opacity: 0.5;
-    top: 0;
-    bottom: 0;
+position: absolute;
+background-image: linear-gradient(to right, black, white);
+opacity: 0.5;
+top: 0;
+bottom: 0;
 } */
 
 
@@ -117,7 +117,7 @@ img {
 /* ribbon */
 .ribbon-container {
     margin-top: 1rem;
-
+    
 }
 
 .ribbon {
@@ -151,13 +151,13 @@ img {
     opacity: 100%;
     /* filter: grayscale(100%) brightness(100%); */
 }
-.splash-text strong {
+.splash-text strong, .about-splash-txt strong {
     color: yellow;
 }
-.splash-text strong:nth-child(2){
+.splash-text strong:nth-child(2), .about-splash-txt strong:nth-child(2) {
     color: lightskyblue;
 }
-.splash-text strong:nth-child(3) {
+.splash-text strong:nth-child(3) , .about-splash-txt strong:nth-child(3) {
     color: lime;
 }
 
@@ -188,10 +188,10 @@ img {
 }
 
 /* .wbd-img-container img {
-    height: 500px;
-    width:  750px;
-    border: 10px solid black;
-    border-radius: 10px;
+height: 500px;
+width:  750px;
+border: 10px solid black;
+border-radius: 10px;
 } */
 .card {
     /* border: 10px solid rgb(0, 0, 0); */
@@ -223,22 +223,48 @@ img {
 }
 /* CSS */
 .styled-button {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .styled-button:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
 }
+
+/* Section : About */
+
+#about {
+    margin: 2rem;
+    padding: 5rem;
+    border: 5px solid;
+    border-image: linear-gradient(to right,rgb(56, 79, 255), rgb(255, 0, 89)) 1 1 1 1; border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.421);
+}
+
+.about-splash-txt {
+    max-width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-splash-txt h1 {
+    font-size: 50px;
+}
+
+.about-splash-txt p {
+    font-family: "Source Code Pro";
+    font-size: large;
+}
+/* Section : Footer */
 
 footer {
     margin-top: 10vh;

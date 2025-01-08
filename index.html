@@ -14,14 +14,14 @@
     <meta name="viewport" content="width=device-width" />  
     <title>Profile</title>
 </head>
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 1, 63, 0.322)), url(img/bg-v2.jpg); background-repeat: no-repeat; background-size: cover">
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 1, 43, 0.493)), url(img/bg-v2.jpg); background-repeat: no-repeat; background-size: cover">
     <nav>
         <div class="nav-bar">
             <div id="logo"><span>Eng</span> Younith</div>
             <ul class="nav-item-container">
                 <li class="nav-item"><a href="/pages/in-class-project">In Class Examples</a></li>
-                <li class="nav-item">something else</li>
-                <li class="nav-item" style="color: darkred;">DO NOT USE THIS ON MOBILE</li>
+                <!-- <li class="nav-item">something else</li> -->
+                <li class="nav-item">About</li>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,7 @@
                 </div>
                 <img src="img/me-nea-grey.png" alt="">
             </div>
-
+            
             <div class="project-button-container">
                 <div class="project-button">
                     <button class="bg-yellow" onclick="focus_id('html-ribbon');toggle_hidden('html-img');toggle_hidden('html-img');">HTML</button>
@@ -48,7 +48,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="wbd">
         <div class="ribbon-container" id="html-ribbon" tabindex="1">
             <div class="ribbon wbd-container bg-yellow">
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="ribbon-container" id="css-ribbon" tabindex="1">
             <div class="ribbon wbd-container bg-lightskyblue">
                 <div class="card">
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="ribbon-container" id="javascript-ribbon" tabindex="1">
             <div class="ribbon wbd-container bg-green">
                 <div class="card">
@@ -112,7 +112,21 @@
                 </div>
             </div>
         </div>
+        
+    </section>
+    
+    <section id="about">
+        
+        <div class="about-splash-txt">
+            <h1>About me</h1>
+            <p>I am an IT student at <strong>Beltei International University</strong>, majoring in <strong>CNCS (Computer Networking and Cyber Security)</strong>. Although I'm currently studying Networking, as a secondary I'm also very interested in <strong>Software Engineering</strong></p>
+        </div>
 
+
+
+        
+        
+        
     </section>
     
     <footer>
@@ -148,18 +162,16 @@
                 <p>(Campus 2, Chaom Chao Flyover)</p>
             </div>
         </div>
-
+        
     </footer>
     <!-- <section id="wbd"> -->
         <!-- <div class="profile-container">
             <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
         </div>
-            
+        
         <div class="wbd-block-container bg-yellow">
             <div class="card">
-                <h1>HTML</h1>
-                <p>Makes things have structure</p>
-            </div>
+                <h1>HTML</h1> <p>Makes things have structure</p> </div>
         </div>
         <div class="wbd-block-container bg-lightskyblue">
             <div class="card">
@@ -175,7 +187,7 @@
             </div>
         </div>
     </section>  -->
-
+    
     <!-- <section id="wbd">
         <div class="profile-container">
             <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
@@ -195,7 +207,7 @@
     }
     function focus_id(id) {
         const focus_target = document.getElementById(id)
-
+        
         if (focus_target) {
             focus_target.focus();
         }
