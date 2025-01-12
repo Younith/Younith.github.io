@@ -21,7 +21,8 @@
             <ul class="nav-item-container">
                 <li class="nav-item"><a href="/pages/in-class-project">In Class Examples</a></li>
                 <!-- <li class="nav-item">something else</li> -->
-                <li class="nav-item">About</li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
             </ul>
         </div>
     </nav>
@@ -66,7 +67,7 @@
                     <div class="card">
                         <p>This is some of the HTML applied to this document</p>
                     </div>
-                    <center><img src="img/html.png"></center>
+                    <img src="img/html.png">
                 </div>
             </div>
         </div>
@@ -112,7 +113,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     
     <section id="about">
@@ -124,11 +124,43 @@
         <div class="about-splash">
             <img src="img/me-nea-garden-no-bg-grey.png" alt="">
         </div>
-
-
-
+    </section>
+    
+    <section id="services">
+        <div class="about-splash" id="services-splash">
+            <h1>Services</h1>
+        </div>
         
-        
+        <div class="services-container">
+            <div class="about-splash" id="services-splash">
+                <h2>Contact Me</h2>
+                <!-- <legend>Text Area & Buttons</legend> -->
+                <!-- <label for="name">Your Name: </label> -->
+                <input type="text" name="name" id="name" placeholder="Your Name" class="service-input"> 
+                <!-- <br>  -->
+                <!-- <br>  -->
+                <!-- <label for="comment">Leave a comment</label> -->
+                <textarea name="comment" id="msg" placeholder="Leave a comment" class="service-input"></textarea>
+                <br>
+                <button class="styled-button" onclick="get_to_sheets(document.getElementById('name').value, document.getElementById('msg').value)">Submit</button>
+                <button class="styled-button" onclick="document.getElementById('name').value = ''; document.getElementById('msg').value = ''">Cancel</button>
+                <button class="styled-button" id="latest-comment-btn" onclick="set_last_comment()">Latest Comment</button>
+            </div>
+
+            <div class="about-splash" id="services-splash">
+                <h2>Description</h2>
+                <p>I have no services to offer, this is just a <strong>demo</strong> for my lecturer, but please <strong>do</strong> leave me a <strong>comment</strong></p>
+            </div>
+        </div>
+
+        <div class="ribbon">
+            <div class="about-splash">
+                <h2>Latest Comment</h2>
+                <h3><span id="last-name"></span></h3>
+                <p id="last-comment"></p>
+                <em><p id="last-time" style="font-size: x-small;"></p></em>
+            </div>
+        </div>
         
     </section>
     
@@ -167,38 +199,11 @@
         </div>
         
     </footer>
-    <!-- <section id="wbd"> -->
-        <!-- <div class="profile-container">
-            <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
-        </div>
-        
-        <div class="wbd-block-container bg-yellow">
-            <div class="card">
-                <h1>HTML</h1> <p>Makes things have structure</p> </div>
-        </div>
-        <div class="wbd-block-container bg-lightskyblue">
-            <div class="card">
-                <h1>CSS</h1>
-                <p>Makes things nice to look at</p>
-            </div>
-            <hr>
-        </div>
-        <div class="wbd-block-container bg-lime">
-            <div class="card">
-                <h1>Javascript</h1>
-                <p>Makes things interactive</p>
-            </div>
-        </div>
-    </section>  -->
-    
-    <!-- <section id="wbd">
-        <div class="profile-container">
-            <div class="splash-text"><strong>W</strong>eb <strong>B</strong>ased <strong>D</strong>evelopment (WBD)</strong></div>
-        </div>
-    </section> -->
-    
 </body>
+
 <script>
+    const SHEETS_URL = new URL("https://script.google.com/macros/s/AKfycbxsbLfeG70_qFmrUdmMtc34DOW5kGMNltRazdi02ia6ONQpmEoquM6dX64BNo0nFIcn/exec")
+    set_last_comment()
     function toggle_hidden(id) {
         const hidden_element = document.getElementById(id)
         if (hidden_element) {
@@ -217,6 +222,60 @@
         else {
             alert("Focus target not found!")
         }
+    }
+    
+    async function get_to_sheets(name, msg){
+        if (!(name && msg)) {
+            alert("Missing Parameters")
+            return
+        }
+        url = SHEETS_URL
+        url.searchParams.append("name", name);
+        url.searchParams.append("msg", msg);
+        
+        if (fetch(url, {
+            mode:"cors"
+        })) {
+            alert("Success!")
+            window.location.reload()
+            
+        }
+    }
+    
+    async function get_last_comment(){
+        
+        try {
+            const response = await fetch(SHEETS_URL, {
+                mode:"cors"
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            const data = await response.json();
+            console.log(data); 
+            return data
+
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    async function set_last_comment(){
+        const last_name = document.getElementById("last-name")
+        const last_comment = document.getElementById("last-comment")
+        const last_time = document.getElementById("last-time")
+
+        const latest_comment_btn = document.getElementById("latest-comment-btn")
+
+        latest_comment_btn.disabled = true;
+        const comment = await get_last_comment()
+        
+        last_name.innerHTML = comment["name"]
+        last_comment.innerHTML = comment["comment"]
+        last_time.innerHTML = comment["time"]
+        
+        latest_comment_btn.disabled = false;
     }
 </script>
 </html>

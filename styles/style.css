@@ -270,8 +270,53 @@ border-radius: 10px;
 .about-splash img {
     max-width: 400px;
     border: 5px solid;
+    filter: brightness(80%);
     border-image: linear-gradient(to bottom ,rgb(56, 112, 255), rgb(255, 0, 212)) 1 1 1 1; 
 }
+
+/* Section : Services */
+
+#services {
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+input {
+    font-family: "Source Code Pro";
+    font-size: medium;
+}
+
+.services-container { 
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#services button {
+    margin: 15px;
+    cursor: pointer;
+    font-family: "Bungee";
+    margin-left: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+
+}
+
+.service-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.about-splash block}
+
+#msg {
+    height: 70px;
+}
+
+
 /* Section : Footer */
 
 
