@@ -3,6 +3,7 @@
     --darkpurple: rgb(19, 0, 62);
     --brownish-yellow: rgb(110, 90, 55);
 }
+
 .block {
     margin: 20px;
     box-shadow: 10px 10px var(--darkpurple);
